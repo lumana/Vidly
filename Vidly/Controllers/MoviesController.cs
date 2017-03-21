@@ -58,7 +58,7 @@ namespace Vidly.Controllers
         }
 
         //El nombre del action se definio en el RouterConfig
-        [Route("movies/released/{year}/{month:regex(\\d{2}):range(1, 12)}")] //Usando el Route Attribute
+        [Route("movies/released/{year}/{month:regex(\\d{2}):range(1, 12)}")] //URL Template -> Usando el Route Attribute
         public ActionResult ByReleaseDate(int year, int month)
         {
             return Content(year + "/" + month);
