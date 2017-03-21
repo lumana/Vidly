@@ -1,0 +1,12 @@
+﻿@*partial view no es una página completa, es como un widget que podemos usar en diferentes Views, Esta no es una vista parcial*@
+
+@*Se agrega para poder ver las propiedades del modelo*@
+@model Vidly.Models.Movie 
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h2>@Model.Name</h2>*@
+<h2>@ViewData["Movie"]</h2>
+
