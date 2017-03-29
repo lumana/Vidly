@@ -11,14 +11,14 @@
 
 </head>
 <body>
-   Aqui se está utilizando un partial view
+   @*Aqui se está utilizando un partial view*@
    @Html.Partial("_Navbar") 
     @*Este es el contenedor para nuestras paginas*@
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Vidly</p>
         </footer>
     </div>
 
